@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# theme-set <nom> : bascule le thème global et recharge les apps.
+set -euo pipefail
+REPO="$(dirname "$(dirname "$(realpath "$0")")")"
+NAME="${1:?usage: theme-set <nom> — dispo: $(ls "$REPO/themes" | grep -v README | tr '\n' ' ')}"
+SRC="$REPO/themes/$NAME"
+[ -d "$SRC" ] || { echo "❌ Thème inconnu : $NAME"; exit 1; }
+
+mkdir -p "$HOME/.config/themes"
+ln -sfn "$SRC" "$HOME/.config/themes/current"
+
+# mako : pas d'include → concat config de base + couleurs
+cat "$HOME/.config/mako/config" "$SRC/colors-mako.conf" > "$HOME/.config/mako/config.themed" 2>/dev/null || true
+
+# Wallpaper
+WALL=$(find "$SRC" -maxdepth 1 -name 'wallpaper.*' | head -1 || true)
+if [ -n "$WALL" ] && command -v hyprctl >/dev/null; then
+    hyprctl hyprpaper preload "$WALL" >/dev/null 2>&1 || true
+    hyprctl hyprpaper wallpaper ",$WALL" >/dev/null 2>&1 || true
+fi
+
+# Reloads (silencieux si l'app ne tourne pas)
+command -v hyprctl >/dev/null && hyprctl reload >/dev/null 2>&1 || true
+pkill -SIGUSR2 waybar 2>/dev/null || true
+command -v makoctl >/dev/null && makoctl reload 2>/dev/null || true
+command -v kitty >/dev/null && kitty @ --to unix:@mykitty set-colors -a "$SRC/colors-kitty.conf" 2>/dev/null || true
+
+echo "✓ Thème actif : $NAME"

@@ -1,0 +1,59 @@
+# --- session hyprland ---
+hyprland
+waybar
+rofi-wayland
+mako
+hyprlock
+hypridle
+hyprpaper
+hyprsunset
+grim
+slurp
+wl-clipboard
+cliphist
+brightnessctl
+greetd
+greetd-tuigreet
+# --- audio ---
+pipewire
+pipewire-pulse
+wireplumber
+pavucontrol
+# --- bluetooth ---
+bluez
+bluez-utils
+blueman
+# --- terminal & shell ---
+kitty
+zsh
+# --- dev 42 / cybersec ---
+base-devel
+clang
+gdb
+valgrind
+nasm
+python
+git
+openssh
+man-db
+neovim
+# --- fichiers & visionneuses ---
+yazi
+thunar
+gvfs
+zathura
+zathura-pdf-mupdf
+imv
+mpv
+# --- outils ---
+btop
+rbw
+podman
+distrobox
+networkmanager
+stow
+# --- apps ---
+obsidian
+steam
+# --- fonts ---
+ttf-jetbrains-mono-nerd

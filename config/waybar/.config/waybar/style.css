@@ -1,0 +1,11 @@
+/* waybar — couleurs depuis le thème courant, jamais en dur */
+@import url("../themes/current/colors-waybar.css");
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 12px;
+    border-radius: 0;
+}
+window#waybar {
+    background: @bg;
+    color: @fg;
+}

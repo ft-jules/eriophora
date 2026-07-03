@@ -1,0 +1,7 @@
+# noms à re-vérifier au moment de l'install (l'AUR bouge)
+zen-browser-bin
+vscodium-bin
+hyprshot
+rofi-rbw
+nordvpn-bin
+claude-code

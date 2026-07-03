@@ -1,0 +1,6 @@
+# mako — arch_setup
+# Couleurs injectées par bin/theme-set (mako ne supporte pas les includes)
+font=JetBrainsMono Nerd Font 10
+default-timeout=6000
+border-size=2
+border-radius=6

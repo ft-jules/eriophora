@@ -1,0 +1,15 @@
+// waybar — arch_setup — barre minimale, cachée par défaut (SUPER+B pour toggle, OLED)
+{
+    "layer": "top",
+    "position": "top",
+    "height": 28,
+    "start_hidden": true,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "bluetooth", "wireplumber", "battery"],
+    "clock": { "format": "{:%a %d/%m | %H:%M}" },
+    "battery": { "format": "{capacity}% {icon}", "format-icons": ["󰁺","󰁼","󰁾","󰂀","󰁹"] },
+    "wireplumber": { "format": "{volume}% 󰕾", "format-muted": "󰝟" },
+    "network": { "format-wifi": "󰖩", "format-ethernet": "󰈀", "format-disconnected": "󰖪" },
+    "bluetooth": { "format": "󰂯", "format-off": "" }
+}
