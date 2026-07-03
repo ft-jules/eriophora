@@ -1,0 +1,11 @@
+﻿*.key
+*.pem
+*token*
+*secret*
+.env
+id_rsa*
+id_ed25519*
+known_hosts
+*.gpg
+Thumbs.db
+.DS_Store
