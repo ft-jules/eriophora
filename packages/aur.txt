@@ -5,3 +5,5 @@ hyprshot
 rofi-rbw
 nordvpn-bin
 claude-code
+cpufetch
+keyd

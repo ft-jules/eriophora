@@ -1,0 +1,9 @@
+[user]
+	name = ft-jules
+	email = jpointil@42.student.fr
+[init]
+	defaultBranch = main
+[core]
+	excludesfile = ~/.config/git/ignore
+[pull]
+	rebase = false

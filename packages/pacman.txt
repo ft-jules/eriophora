@@ -55,5 +55,42 @@ stow
 # --- apps ---
 obsidian
 steam
+# --- cli utils ---
+tmux
+fzf
+bat
+fd
+tree
+file
+ffmpeg
+imagemagick
+p7zip
+curl
+wget
+unzip
+trash-cli
+torsocks
+onefetch
+irssi
+fastfetch
+just
+pacman-contrib
+fwupd
+vim
+python-pip
+python-pipx
+# --- shell : prompt + plugins (requis par config/zsh) ---
+starship
+zsh-autosuggestions
+zsh-syntax-highlighting
+# --- couleur / capture ---
+hyprpicker
+# --- dictionnaires (orthographe) ---
+hunspell
+hunspell-fr
+hunspell-en_us
+# --- apps (suite) ---
+discord
+spotify-launcher
 # --- fonts ---
 ttf-jetbrains-mono-nerd

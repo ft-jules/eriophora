@@ -1,13 +1,13 @@
-# arch_setup
+# eriophora
 
 Install Arch + Hyprland reproductible, façon Omarchy. Un PC neuf → mon environnement complet.
 
 ## Usage
 Sur une Arch de base fraîchement installée (voir vault : `Arch Linux - Install`) :
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ft-jules/arch_setup/main/boot.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ft-jules/eriophora/main/boot.sh | bash
 ```
-Ou manuellement : `git clone https://github.com/ft-jules/arch_setup ~/arch_setup && ~/arch_setup/install.sh`
+Ou manuellement : `git clone https://github.com/ft-jules/eriophora ~/eriophora && ~/eriophora/install.sh`
 
 Rejouable : chaque étape est idempotente (`--needed`, checks avant action).
 

@@ -1,4 +1,4 @@
-// waybar — arch_setup — barre minimale, cachée par défaut (SUPER+B pour toggle, OLED)
+// waybar — eriophora — barre minimale, cachée par défaut (SUPER+B pour toggle, OLED)
 {
     "layer": "top",
     "position": "top",
