@@ -1,0 +1,7 @@
+* {
+    background: #000000;
+    foreground: #e5a50a;
+    accent:     #c4a000;
+    background-color: @background;
+    text-color: @foreground;
+}

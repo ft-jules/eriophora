@@ -1,8 +1,8 @@
-# default — thème de base
+# default — thème de base (ex-mustard)
 Moutarde (`#E5A50A`) sur noir pur (`#000000`, pixels OLED éteints), palette 16 couleurs Tango.
-Repris de la config kitty Ubuntu (cf vault : `Thèmes - Arch` → « mustard »).
+Repris de la config kitty d'Ubuntu.
 
-TODO :
-- déposer `wallpaper.png` (à trouver, critères OLED/épuré).
-- `fastfetch-logo.png` présent (pfp Hylics/Shywayne, détouré).
-- compléter `colors-hypr.conf` · `colors-waybar.css` · `colors-rofi.rasi` · `colors-mako.conf`.
+Contenu (complet) :
+- `wallpaper.jpg` — univers Hylics (room), sombre.
+- `fastfetch-logo.png` — pfp Hylics/Shywayne, détouré.
+- couleurs : `colors-kitty` · `colors-hypr` · `colors-waybar` · `colors-rofi` · `colors-mako`.

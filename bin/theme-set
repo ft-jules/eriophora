@@ -9,8 +9,9 @@ SRC="$REPO/themes/$NAME"
 mkdir -p "$HOME/.config/themes"
 ln -sfn "$SRC" "$HOME/.config/themes/current"
 
-# mako : pas d'include → concat config de base + couleurs
-cat "$HOME/.config/mako/config" "$SRC/colors-mako.conf" > "$HOME/.config/mako/config.themed" 2>/dev/null || true
+# mako : pas d'include → on génère la config finale (base du repo + couleurs du thème)
+mkdir -p "$HOME/.config/mako"
+cat "$REPO/config/mako/.config/mako/config" "$SRC/colors-mako.conf" > "$HOME/.config/mako/config"
 
 # Wallpaper
 WALL=$(find "$SRC" -maxdepth 1 -name 'wallpaper.*' | head -1 || true)
